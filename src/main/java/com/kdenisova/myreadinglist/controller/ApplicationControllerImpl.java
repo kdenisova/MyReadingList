@@ -99,7 +99,7 @@ public class ApplicationControllerImpl implements ApplicationController {
             readingList.save(book);
         } catch (IOException e) {
             log.error(e);
-            throw new ApplicationControllerException("Error while saving Book to the Reading List", e);
+            throw new ApplicationControllerException("Error occurred while saving Book to the Reading List", e);
         }
     }
 
