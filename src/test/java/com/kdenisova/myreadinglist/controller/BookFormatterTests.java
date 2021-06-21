@@ -47,7 +47,7 @@ public class BookFormatterTests {
     }
 
     @Test
-    public void ValidRoundTrip() throws BookFormatterException {
+    public void FormatValidBook_ReturnsDeserializedSameEqualBook() throws BookFormatterException {
         // Arrange
         BookFormatter formatter = new BookFormatterImpl();
         BookModel bookModel = new BookModel(Collections.singletonList("J.K. Rowling"), "Harry Potter", "Scholastic");

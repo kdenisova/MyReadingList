@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when;
 
 public class ReadingListTests {
     @Test
-    public void ValidRoundTrip() throws IOException, BookFormatterException {
+    public void SaveValidBook_ReturnsSameEqualResult() throws IOException, BookFormatterException {
         // Slightly more integration than Unit
 
         // Arrange
