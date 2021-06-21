@@ -15,6 +15,9 @@ The application allows you to:
 * [JUnit](https://junit.org/junit5/) - Unit testing framework.
 
 ## How to use?
+
+[JDK](https://docs.oracle.com/en/java/javase/16/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A) and [Maven](https://maven.apache.org/download.cgi) are required prerequisites.
+
 1. Build
 
      `mvn clean package`
@@ -22,6 +25,10 @@ The application allows you to:
 2. Launch
      
      `java -jar target/myreadinglist.jar`
+
+3. Tests
+
+   `mvn clean test`
      
 ## Project Structure
 * com.kdenisova.myreadinglist/
