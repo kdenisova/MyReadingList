@@ -30,10 +30,11 @@ public class CLIConsole {
         renderHeader();
 
         do {
-            System.out.println(ColorType.WHITE + "Choose an option:");
+            System.out.println(ColorType.WHITE + "Available options:");
             System.out.println("(1) Find Books");
             System.out.println("(2) View Reading List");
             System.out.println("(3) Exit\n");
+            System.out.println("Enter the option (1-3):");
             System.out.print("> ");
 
             option = scanner.next();
@@ -149,13 +150,15 @@ public class CLIConsole {
         Integer selectedBookOption = null;
 
         do {
-            System.out.println(ColorType.WHITE + "Choose the book you would like to save:");
+            System.out.println(ColorType.WHITE + "Found books:");
 
             for (int i = 0; i < books.size(); i++) {
                 System.out.printf("(%d) %s\n", i + 1, convertBookToString(books.get(i)));
             }
 
             System.out.printf("\n(%d) %s\n", 0, "Return to Main Menu");
+            System.out.printf(ColorType.WHITE +
+                    "\nChoose the book number you would like to save (1-%d) or press (0) to return to Main Menu:", books.size());
 
             System.out.print("\n> ");
 
