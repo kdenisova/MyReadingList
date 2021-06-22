@@ -1,13 +1,12 @@
 package com.kdenisova.myreadinglist.controller;
 
 import com.kdenisova.myreadinglist.model.BookModel;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.List;
 
-public interface ReadingList {
+public interface ApiClient {
 
-    void save(BookModel book) throws IOException;
-
-    List<BookModel> getAll() throws IOException, BookFormatterException;
+    List<BookModel> search(String query) throws IOException;
 }
