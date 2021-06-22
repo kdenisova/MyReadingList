@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/kdenisova/MyReadingList/tree/main.svg?style=svg)](https://circleci.com/gh/kdenisova/MyReadingList/tree/main)
+
 # MyReadingList
 A command line Java application that allows you to use the Google Books API to search for books and construct a reading list.
 
