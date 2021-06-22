@@ -39,14 +39,18 @@ The application allows you to:
   
 * com.kdenisova.myreadinglist.controller/
 
-  * **ApplicationController.java** - The application controller that responsible for the main application logic and communication between model and view components (**ApplicationControllerImpl.java** as a default implementation).
+  * **ApplicationController.java** - The application controller that is responsible for the main application logic and communication between model and view components (**ApplicationControllerImpl.java** as a default implementation).
 
-  * **BookFormatter.java** - The component responsible for book formatting (**BookFormatterImpl.java** as a default implementation).
+  * **BookFormatter.java** - The component is responsible for book formatting (**BookFormatterImpl.java** as a default implementation).
   
-  * **GoogleBooksApiClient.java** -  The component responsible for making a GET request to Google Books API and returning a search result  (**GoogleBooksApiClientImpl.java** as a default implementation).
+  * **GoogleBooksApiClient.java** -  The component is responsible for making a GET request to Google Books API and returning a search result  (**GoogleBooksApiClientImpl.java** as a default implementation of ApiClient).
 
-  * **ReadingList.java** - The component responsible for working with a Reading List (**ReadingListImpl.java** as a default implementation).
+  * **ReadingList.java** - The component is responsible for working with a Reading List (**ReadingListImpl.java** as a default implementation).
+      
+  * **ApiResponseMapper.java** - The component is responsible for mapping JSON to BookModel (**GoogleBooksApiResponseMapperImpl.java** as an implementation for Google Books API).
 
+  * **UriBuilder.java** - The component is responsible for providing URI for Rest API Clients (**GoogleBooksUriBuilderImpl.java** as an implementation for Google Books API).
+    
 * com.kdenisova.myreadinglist.model/
   
   * **BookModel.java** - The book model.
